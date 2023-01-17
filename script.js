@@ -50,3 +50,13 @@ open.addEventListener('click',()=>{
 close.addEventListener('click',()=>{
     hamb.style.right = -100 + "%";
 })
+
+let nav_links = document.querySelectorAll('.c_links');
+
+for (let i = 0; i < nav_links.length; i++) {
+    nav_links[i].addEventListener('click',()=>
+    {
+        hamb.style.right = -100 + "%";
+        console.log("its work")
+    });
+}

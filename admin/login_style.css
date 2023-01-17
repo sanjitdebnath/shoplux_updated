@@ -1,0 +1,133 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    --prime_col : rgb(2, 143, 143);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.cont
+{
+    margin:20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cont .title
+{
+    width: 150px;
+    height: 35px;
+    /* background-color: rgba(122, 107, 77, 0.411); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.cont .title span{
+    padding: 15px;
+    color: black;
+    cursor: pointer;
+}
+.cont .title span:nth-child(1)
+{
+    color: white;
+}
+.cont .title .back_btn
+{
+    width: 70px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 35px;
+    transition: 0.5s;
+    background-color: var(--prime_col);
+}
+.box
+{
+    width: 350px;
+    /* background-color: red; */
+    height: 270px;
+    overflow: hidden;
+}
+.box .box_slide 
+{
+    width: 200%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+.box .box_slide .log_in, .box .box_slide .sign_in
+{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box .box_slide .log_in form, .box .box_slide .sign_in form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.box .box_slide .log_in .input_field, .box .box_slide .sign_in .input_field
+{
+    margin-bottom: 15px;
+    width: 80%;
+    height: 40px;
+}
+.box .box_slide .log_in .input_field input, .box .box_slide .sign_in .input_field input{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    outline: none;
+    text-transform: capitalize;
+    border: 1px solid black;
+    font-size: 16px;
+}
+.box .box_slide .log_in .input_field input::placeholder, .box .box_slide .sign_in .input_field input::placeholder{
+    font-size: 15px;
+}
+.box .box_slide .log_in #login_btn input ,.box .box_slide .sign_in #signin_btn input
+{
+    cursor: pointer;
+    font-weight:bold;
+    text-transform: uppercase;
+    background-color: var(--prime_col);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.show_pop_login, .show_pop_signin{ 
+    display: block;
+    position: absolute;
+    top: 70px;
+    text-align: center;   
+    padding: 5px 20px;
+    background-color: rgb(0, 146, 0);
+    color: white;
+    
+}
+.show_pop_login{
+    background-color: red;
+}

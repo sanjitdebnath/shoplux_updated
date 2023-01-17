@@ -1,0 +1,114 @@
+.product_cont
+{
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product_cont .add_product form
+{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(113, 206, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+.product_cont .add_product form h2
+{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: rgb(10, 51, 46);
+}
+.product_cont .add_product form .input_field ,.product_cont .add_product form .input_field select
+{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_cont .add_product form .input_field label{
+    font-size: 18px;
+    flex: 1;
+    /* background-color: yellow; */
+}
+.product_cont .add_product form .input_field input, .product_cont .add_product form .input_field select{
+    font-size: 18px;
+    height: 100%;
+    flex: 2;
+    outline: none;
+    padding-left: 10px;
+}
+/* .product_cont .add_product form .input_field:nth-child(2) input
+{
+    width: 100px;
+} */
+#submit{
+    width: 100px;
+    text-align: center;
+     cursor: pointer;
+}
+
+/* .table_div
+{
+    margin-left: 110px;
+} */
+table{
+    margin-top:50px ;
+    /* width: 60%; */
+    border-collapse: collapse;
+}
+table thead{
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+}
+table tbody tr td:nth-child(2) img
+{
+    width: 100px;
+}
+td, th{
+    padding: 10px 20px;
+    text-align: center;
+}
+#edit, #delete{
+    width: 70px;
+    height:30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(33, 170, 33);
+    cursor: pointer;
+}
+a #edit, a #delete
+{
+    text-decoration: none;
+    color: white;
+}
+#delete
+{
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+@media screen and (max-width : 480px){
+
+    .product_cont .add_product form
+    {
+        width: 400px;
+    }
+    .table_div{
+        width: 400px;
+        overflow-x:auto;
+    }
+}
